@@ -1,0 +1,132 @@
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
+  text-decoration-line: none;
+}
+/* Element Selectors */
+
+body{
+  position: relative;
+  font-family: "Helvetica, arial, sans-serif";
+  font-size: 20px;
+  background-color: #edd9a3; /* Banana Mania*/
+  color: black;  /* Pine Tree*/
+  
+}
+
+/* format name */
+.holly{
+  color: #1C3144;
+}
+.hoffman{
+  color: #70877F;
+}
+h1{
+  margin:20px;
+}
+
+
+
+/* format main content */
+main{
+  padding: 60px 0;
+}
+
+/* here is where the nav items are made side-by-side */
+
+.link{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #266150;
+}
+
+header{
+  position:fixed;
+  border-bottom: 10px solid #eee;
+}
+
+footer {
+  position:absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid #eee
+}
+
+figure{
+  margin-bottom:40px;
+}
+
+img{
+  display: block;
+  margin: 20px auto;
+}
+
+figcaption{
+  font-size: 8px;
+}
+
+.image-reformat{
+  height: 20%;
+  width: 20%;
+  padding: 5px;
+  background-color: rgb(18, 48, 45);
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-top: 3px solid #eee;
+  background-color: #70877F;
+}
+ 
+#contact work{
+  color: #eee;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid rgb(178, 231, 204);
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+
+#link{
+  font-size: 20px;
+  color: #eee;
+  display: inline;
+}
+
+
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#about{
+  font-size: 20px;
+  color:#A24936;
+  -webkit-text-stroke: .3px #eee;
+}
