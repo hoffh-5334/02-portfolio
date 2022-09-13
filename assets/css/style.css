@@ -15,7 +15,7 @@ body{
   
 }
 
-/* format name */
+/* format name color */
 .holly{
   color: #1C3144;
 }
@@ -26,6 +26,11 @@ h1{
   margin:20px;
 }
 
+/* format link text color */
+.color{
+  color: white;
+}
+
 
 
 /* format main content */
@@ -33,43 +38,84 @@ main{
   padding: 60px 0;
 }
 
-/* here is where the nav items are made side-by-side */
+#contact{
+  background-color: #70877F;
+  text-decoration: none;
+  text-align: center;
+  border-style: solid;
+  border-color:#000000ff;
+  padding:2% 2%;
+  font-size: 100%;
+  /* position: fixed;
+  top: 100;
+  left:0; */
+  width: 100%;
+  justify-content: center;
+  height: auto;
+}
+nav a{
+  padding: 30px 30px;
+  color:white;
+}
 
-.link{
+.contactinfo{
   display: inline-flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  padding: 0px 20px;
+  flex-wrap: wrap;
+  padding: 50px, 80px;
   text-decoration: none;
 }
 
-header,
-footer {
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  background-color: #266150;
+h2{
+  padding-bottom: 15px;
 }
 
-header{
+/* header styling */
+.main-header{
+  display: flex;
+  justify-content: flex-end;
+  align-content:center;
+  flex-wrap: wrap;
+  background-color: #1c3144;
+  width: 100%;
+  height: 60px;
   position:fixed;
   border-bottom: 10px solid #eee;
 }
 
+.link{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.nav-sidebar{
+ display: flex;
+ justify-content: flex-start; 
+}
+
+/* footer styling */
 footer {
   position:absolute;
   margin-top: 0;
   bottom: 0;
-  border-bottom: 10px solid #eee
+  width: 100%;
+  height: 60px;
+  border-bottom: 10px solid #eee;
+  background-color: #1c3144;
+  color:white;
+  font-size: 10px;
 }
-
+/* bio image styling */
 figure{
   margin-bottom:40px;
 }
 
 img{
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 figcaption{
@@ -83,37 +129,25 @@ figcaption{
   background-color: rgb(18, 48, 45);
 }
 
-section {
+/* Section Styling */
+
+#about, #work , #contact
+{
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
   border-top: 3px solid #eee;
   background-color: #70877F;
+  font-size: 20px;
+  color:#1c3144;
+  -webkit-text-stroke: .3px black;
 }
- 
-#contact work{
-  color: #eee;
-}
-
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px solid rgb(178, 231, 204);
-  border-radius: 20px;
-}
-
-label {
-  display: inline-block;
-  width: 100px;
-}
-
 
 #link{
   font-size: 20px;
   color: #eee;
   display: inline;
 }
+
 
 
 /* Class Selectors */
@@ -125,8 +159,8 @@ label {
   text-align: right;
 }
 
-#about{
-  font-size: 20px;
-  color:#A24936;
-  -webkit-text-stroke: .3px #eee;
+
+
+@media screen and (max-width: 992px) {
+.section { width: 50%} 
 }
