@@ -4,39 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holly Hoffman</title>
+  <title>Holly Hoffman</title>  
+  <link rel="stylesheet" href="./assets/css/resetstyle.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <body>
     <header class="main-header">
       <nav>
         <ul>
-          <li class="link">
-            <a class= color href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
+          <li>
+            <a class="nav-link" href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
           </li>
-          <li class="link">
-            <a class= color href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
+          <li>
+            <a class="nav-link" href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
           </li>
-          <li class="link">
-           <a class= color href="#contact">Contact</a>
+          <li>
+           <a class="nav-link"  href="#contact">Contact</a>
           </li>
-          <li class="link">
-            <a class= color href="#work">Work</a>
+          <li>
+            <a class="nav-link" href="#work">Work</a>
           </li>
         </ul>
       </nav>
     </header>
-   
+    
+    <div id="page">
       <main>
         <section>
           <h1 class="text-center"> <span class="holly">Holly</span><span class="hoffman">Hoffman</span></h1>
           <figure>
-            <img class="image-reformat" src="./assets/images/headshot.jpg" alt="headshot of Holly Hoffman"/>
+            <img src="./assets/images/headshot2.jpg" alt="headshot of Holly Hoffman"/>
             <figcaption class="text-center">this is me</figcaption>
           </figure>
         </section>  
         
         <section id="about">
-          <h2>About Me</h2>
+          <h2 class="title">About Me</h2>
             <p>Hi! I'm Holly.</p>
 
             <p> I'm an aspiring full-stack designer currently enrolled in Full-Stack Bootcamp.</p>
@@ -45,29 +48,39 @@
             <p> When I'm not busy with bootcamp I can be found hunting, smoking meat, or relaxing with my dogs and wife.</p>
         </section>
 
-        <section id="work">
+        <div id="work">
             <h2>My Work</h2>
-              <ul>
-                <li>replace this later</li>
-                <li>replace this later</li>
-                <li>replace this later</li>
-                <li>replace this later</li>
-
-              </ul>
-        </section>
+              <section">
+                <header id="work-heading">project 1</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 1"
+              </section>
+              <section>
+                <header id="work-heading">project 2</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 2"
+              </section>
+              <section>
+                <header id="work-heading">project 3</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 3"
+              </section>
+              <section>
+                <header id="work-heading">project 4</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 4"
+              </section>
+          </div>
         <section id="contact">
-            <h2>Contact Me</h2> 
+            <h2 class="title">Contact Me</h2> 
           <nav>
-            <a href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
-            <a href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
-            <a href="mailto:hoffh5334@gmail.com"><strong>Email</strong></a>
-            <a href="tel:920-323-6208"><strong>920-323-6208</strong></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
+            <a class="nav-link" href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
+            <a class="nav-link" href="mailto:hoffh5334@gmail.com"><stronger>Email</stronger></a>
+            <a class="nav-link" href="tel:920-323-6208"><stronger>920-323-6208</stronger></a>
           </nav>    
         </section>
       </main>
+    </div> 
   
       <footer class="text-center">
-        &copy; 2022 Holly Hoffman
+        <a id="copywright">&copy; 2022 Holly Hoffman</a>
       </footer>
   </body>
   </html>
