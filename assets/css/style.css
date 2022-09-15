@@ -4,8 +4,8 @@
 body{
   font-family: "Helvetica, arial, sans-serif";
   font-size: 20px;
-  background-color: #edd9a3; /* Banana Mania*/
-  color: black;  /* Pine Tree*/
+  background-color: #edd9a3; 
+  color: black;  
 
 }
 
@@ -50,6 +50,10 @@ nav ul li{
   display: inline;
 }
 
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
 
 /* header styling */
 .main-header{
@@ -73,7 +77,6 @@ nav ul li{
   background-color: #70877F;
   font-size: 20px;
   color:#1c3144;
-  /* -webkit-text-stroke: .3px black; */
 }
 
 
@@ -142,10 +145,6 @@ nav a.nav-link, nav a.nav-link:active, nav a.nav-link:visited {
   font-weight: normal;
 }
 
-nav a.nav-link:visited {
-  font-weight: 100 !important;
-}
-
 .nav-link:hover{
   text-shadow: 2px 2px #a24936;
 }
@@ -165,21 +164,6 @@ nav a.nav-link:visited {
 .hoffman{
   color: #70877F;
 }
-
-
-
-/* Class Selectors */
-.text-center {
-  text-align: center;
-}
-
-.main-content {
-  /* display:flex;
-  flex-wrap: wrap; */
-  width: 100%;
-}
-
-
 
 
 
