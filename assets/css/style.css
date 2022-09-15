@@ -12,8 +12,9 @@ body{
 h1{
   margin-top: 80px;
 }
-h2{
+.section-heading{
   padding-bottom: 15px;
+  font: bold;
 }
 
 footer {
@@ -26,6 +27,7 @@ footer {
   background-color: #1c3144;
   color:white;
   font-size: 10px;
+  text-align: center;
 }
 
   /* bio image styling */
@@ -33,7 +35,7 @@ figure{
   margin-bottom:40px;
 }
 
-img{
+#picture{
   display: block;
   margin: 5px auto;
 }
@@ -61,17 +63,97 @@ nav ul li{
   border-bottom: 10px solid #eee;
 }
 
-.nav-link{
+/* general styling of sections */
+#about, #work, #contact
+{
+  width:100%;
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-top: 3px solid #eee;
+  background-color: #70877F;
+  font-size: 20px;
+  color:#1c3144;
+  /* -webkit-text-stroke: .3px black; */
+}
+
+
+/* styles contact section further*/
+#contact{
+  background-color: #70877F;
+  text-decoration: none;
+  text-align: center;
+  border-style: solid;
+  border-color:#000000ff;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+}
+
+/* styles work section */
+
+#portfolio-cards{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  padding: 5px;
+  width: 40%;
+  min-width: 300px;
+  position: relative;
+} 
+
+.card header{
+  left: 0;
+  bottom: 20px;
+}
+
+#feature{
+  width: 70%;
+  background-image: url(../images/Screenshot.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  display: block;
+  height: 300px;
+}
+
+#work header {
+  padding: 20px;
+  position: absolute;
+  background-color: #1c3144;
+  color: white;
+  left: 0px;
+  bottom: 10px;
+}
+
+#placeholder {
+  display: block;
+  margin: 5px auto;
+  width:400px;
+}
+
+
+/* styles links for size and hover */
+nav a.nav-link, nav a.nav-link:active, nav a.nav-link:visited {
   font-size: 20px;
   text-decoration: none;
   margin: 20px;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
 
+nav a.nav-link:visited {
+  font-weight: 100 !important;
+}
 
 .nav-link:hover{
   text-shadow: 2px 2px #a24936;
+}
+
+#link{
+  font-size: 20px;
+  color: #eee;
+  display: inline;
 }
 
 
@@ -86,41 +168,6 @@ nav ul li{
 
 
 
-
-#contact{
-  background-color: #70877F;
-  text-decoration: none;
-  text-align: center;
-  border-style: solid;
-  border-color:#000000ff;
-  padding:2% 2%;
-  /* font-size: 100%; */
-  width: auto;
-  justify-content: center;
-  height: auto;
-}
-
-
-/* Section Styling */
-
-#about, #work, #contact
-{
-  width:100%;
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px solid #eee;
-  background-color: #70877F;
-  font-size: 20px;
-  color:#1c3144;
-  -webkit-text-stroke: .3px black;
-}
-
-#link{
-  font-size: 20px;
-  color: #eee;
-  display: inline;
-}
-
 /* Class Selectors */
 .text-center {
   text-align: center;
@@ -132,45 +179,12 @@ nav ul li{
   width: 100%;
 }
 
-.work-heading{
-  padding: 5px;
-  width: auto;
-  text-align: center;
-  color: #1c3144;
-}
 
-#portfolio-cards{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.card {
-  padding: 5px;
-  width: 40%;
-  min-width: 300px;
-  position: relative;
-} 
 
-#feature{
-  width: 70%;
-  background-image: url(../images/Screenshot.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  
-  display: block;
-  height: 300px;
 
-}
 
-#work header {
-  padding: 20px;
-  position: absolute;
-  background-color: #1c3144;
-  color: white;
-  left: 0;
-  bottom: 20px;
-}
 
+/* add responsiveness */
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
   .card {
