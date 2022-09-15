@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Holly Hoffman</title>  
-  <link rel="stylesheet" href="./assets/css/resetstyle.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <body>
@@ -13,10 +13,7 @@
       <nav>
         <ul>
           <li>
-            <a class="nav-link" href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
-          </li>
-          <li>
-            <a class="nav-link" href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
+           <a class="nav-link"  href="#about">About Me</a>
           </li>
           <li>
            <a class="nav-link"  href="#contact">Contact</a>
@@ -28,7 +25,7 @@
       </nav>
     </header>
     
-    <div id="page">
+    <div class="main-content">
       <main>
         <section>
           <h1 class="text-center"> <span class="holly">Holly</span><span class="hoffman">Hoffman</span></h1>
@@ -40,40 +37,53 @@
         
         <section id="about">
           <h2 class="title">About Me</h2>
-            <p>Hi! I'm Holly.</p>
-
-            <p> I'm an aspiring full-stack designer currently enrolled in Full-Stack Bootcamp.</p>
-            <p>I've always had a knack for technology and analytics and helping create products to help customers be more efficient which led me to full-stack.</p>
-            <p> I have a wonderful wife and a 10 year old step daughter. I also have three dogs and two cats.</p>
-            <p> When I'm not busy with bootcamp I can be found hunting, smoking meat, or relaxing with my dogs and wife.</p>
+            <article id="bio">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium quibusdam doloribus quisquam quos molestias, exercitationem omnis fugit, ea optio sunt porro nemo nisi beatae ducimus culpa recusandae ab commodi.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel nemo pariatur accusantium, voluptatum commodi quo possimus hic, quis cupiditate, nesciunt quibusdam enim ut! Modi iusto atque tenetur non possimus?</p>
+              
+            </article>  
         </section>
 
+        <!-- fix this section. move header id to class -->
         <div id="work">
             <h2>My Work</h2>
-              <section">
-                <header id="work-heading">project 1</header>
-                <img src="./assets/images/placeholder.jpg" alt="placeholder 1"
-              </section>
-              <section>
-                <header id="work-heading">project 2</header>
-                <img src="./assets/images/placeholder.jpg" alt="placeholder 2"
-              </section>
-              <section>
-                <header id="work-heading">project 3</header>
-                <img src="./assets/images/placeholder.jpg" alt="placeholder 3"
-              </section>
-              <section>
-                <header id="work-heading">project 4</header>
-                <img src="./assets/images/placeholder.jpg" alt="placeholder 4"
-              </section>
-          </div>
+            <div id="portfolio-cards">
+              <div class="card" id="feature">
+                <header class="work-heading">Search Engine Optimization</header>
+                <a id="feature" href="https://github.com/hoffh-5334/homework-01-code-refactor" target= "_blank"></a>
+              
+              </div>
+              <div class="card">
+                <header class="work-heading">project 2</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 1" />
+              </div>
+              <div class="card">
+                <header class="work-heading">project 3</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 2"/>
+              </div>
+              <div class="card">
+                <header class="work-heading">project 4</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 3"/>
+              </div>
+              <div class="card">
+                <header class="work-heading">project 5</header>
+                <img src="./assets/images/placeholder.jpg" alt="placeholder 4"/>
+              </div>
+            </div>
+        </div>
+
         <section id="contact">
             <h2 class="title">Contact Me</h2> 
           <nav>
+            <a class="nav-link" href="tel:920-323-6208">920-323-6208</a>
             <a class="nav-link" href="https://www.linkedin.com/in/holly-hoffman3318" target="_blank">LinkedIn</a>
             <a class="nav-link" href="https://github.com/hoffh-5334" target="_blank">GitHub</a>
-            <a class="nav-link" href="mailto:hoffh5334@gmail.com"><stronger>Email</stronger></a>
-            <a class="nav-link" href="tel:920-323-6208"><stronger>920-323-6208</stronger></a>
+            <a class="nav-link" href="mailto:hoffh5334@gmail.com" target="_blank">
+              <!-- <stronger> -->
+                Email
+              <!-- </stronger> -->
+            </a>
+            
           </nav>    
         </section>
       </main>
