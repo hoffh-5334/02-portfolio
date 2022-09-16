@@ -107,27 +107,38 @@ nav ul li{
 } 
 
 .card header{
-  left: 0;
-  bottom: 20px;
+  left: 8%;
+  bottom: 5%;
+  padding: 0.5em;
+  position: absolute;
+  background-color: #1c3144;
+  color: white;
 }
+
+
 
 #feature{
   width: 70%;
   background-image: url(../images/Screenshot.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-size:100%;
+  background-repeat: no-repeat;
   display: block;
-  height: 300px;
+  height: 200px;
+  position:relative;
 }
-
-#work header {
+#feature header{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+}
+/* #work header {
   padding: 20px;
   position: absolute;
   background-color: #1c3144;
   color: white;
   left: 0px;
   bottom: 10px;
-}
+} */
 
 #placeholder {
   display: block;
